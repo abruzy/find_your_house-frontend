@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import Spacer from './Spacer';
 
+import '../styles/Home.css';
+
 export default function Home() {
   return (
     <div className="home-page">
