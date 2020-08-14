@@ -3,10 +3,11 @@ import StarRatings from 'react-star-ratings';
 import { FiHeart } from 'react-icons/fi';
 import { IconContext } from 'react-icons';
 import Proptypes from 'prop-types';
-import '../styles/FavouriteListingItem.css';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router';
 import { removeFavourite } from '../actions/favourites';
+
+import '../styles/FavouriteListingItem.css';
 
 const FavouriteListingItem = ({ listing }) => {
   const dispatch = useDispatch();

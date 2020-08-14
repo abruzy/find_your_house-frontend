@@ -1,22 +1,23 @@
 .home-top-section {
-  background: rgb(93, 93, 93) url(/group-hiking-3.jpeg) 50% 0 no-repeat;
-  background-size: cover;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/basketball.jpeg') 100% 100%/cover no-repeat;
   height: 100vh;
 }
 
 .home-top-section h1 {
   color: white;
   margin-top: 200px;
+  margin-bottom: 1rem;
   padding: 0 15px;
-  font-size: 45px;
-  text-shadow: 2px 2px #000;
+  font-size: 60px;
+  font-weight: bold;
 }
 
 .home-top-section h4 {
   color: white;
-  text-shadow: 2px 2px #000;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 400;
   padding: 0 15px;
+  margin-bottom: 2rem;
 }
 
 .start-free {
@@ -38,16 +39,23 @@
   color: rgb(255, 75, 4);
 }
 
-.home-main-section p {
+.home-main-section {
+  height: 100vh;
+  padding: 70px 30px;
+}
+
+.simple {
   font-size: 16px;
+  font-weight: 700;
   color: rgb(93, 93, 93);
-  margin-top: 30px;
-  padding: 0 15px;
+  text-transform: uppercase;
 }
 
 .home-main-section h2 {
-  margin: 15px 0 45px;
-  padding: 0 15px;
+  margin-top: 2rem;
+  margin-bottom: 7rem;
+  font-weight: 600;
+  font-size: 1.75rem;
 }
 
 .home-main-section-img {
@@ -57,13 +65,35 @@
 }
 
 .home-main-section-colored {
-  background-color: rgb(221, 221, 221);
-  margin-top: -10px;
-  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-main-section-colored h2 {
+  text-align: justify;
+  margin: 0;
+  margin-bottom: 2rem;
 }
 
 .home-main-section-colored p {
-  margin: 0;
+  width: 15rem;
+  text-align: justify;
+}
+
+.everywhere {
+  height: 10rem;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/street.jpeg') 50% 50%/cover no-repeat;
+  padding: 1rem 0;
+  color: white;
+}
+
+footer {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-logo {

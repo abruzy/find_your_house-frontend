@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
@@ -16,13 +17,25 @@ export default function Home() {
         <Link to="/signup" className="start-free">Start free</Link>
       </div>
       <div className="home-main-section">
-        <p>Simple and fast way to rent</p>
+        <p className="simple">Simple and fast way to rent</p>
         <h2>Comfortable home from reliable people</h2>
-        <img src="/snowboard.jpeg" alt="snowboarders" className="home-main-section-img" />
         <div className="home-main-section-colored">
-          <p>All stats at your fingertips at any time</p>
-          <Link to="/signup" className="start-free">Start free</Link>
+          <div className="left-content">
+            <h2>
+              All stats at your fingertips
+              <br />
+              {' '}
+              at any time
+            </h2>
+            <p>You will have the best tools to manage and collect information about the houses. Full controll will save you from any unforseen situations and save you money and customer relationships.</p>
+            <Link to="/signup" className="start-free">Start free</Link>
+          </div>
+          <img src="/bookstore-app.png" alt="..." />
         </div>
+      </div>
+      <div className="everywhere">
+        <h3>Be everywhere at home</h3>
+        <Link to="/signup" className="start-free">Start free</Link>
       </div>
       <footer>
         <h2 className="footer-logo">Find House</h2>
