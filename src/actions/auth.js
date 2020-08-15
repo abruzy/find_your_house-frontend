@@ -1,13 +1,14 @@
 import axios from 'axios';
 import { addSignupError, addLoginError } from '.';
 
-const urlSignup = 'http://localhost:3001/auth/signup';
-const urlLogin = 'https://localhost:3001/auth/login';
+const urlSignup = 'http://localhost:3001/signup';
+const urlLogin = 'http://localhost:3001/auth/login';
 
 export const signupUser = (user, history) => dispatch => {
   axios.post(
     urlSignup,
     user,
+    { withCredentials: true },
   ).then(res => {
     dispatch({
       type: 'SIGNUP_SUCCESS',
@@ -25,6 +26,7 @@ export const loginUser = (user, history) => dispatch => {
   axios.post(
     urlLogin,
     user,
+    { withCredentials: true },
   ).then(res => {
     dispatch({
       type: 'LOGIN_SUCCESS',
