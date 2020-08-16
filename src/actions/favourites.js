@@ -14,6 +14,7 @@ export const fetchFavourites = () => dispatch => {
         Authorization: `Bearer ${token}`,
       },
     },
+    { withCredentials: true },
   ).then(res => {
     dispatch(getFavourites(res.data));
   }).catch(err => {
@@ -32,6 +33,7 @@ export const addFavourite = id => dispatch => {
         Authorization: `Bearer ${token}`,
       },
     },
+    { withCredentials: true },
   ).catch(err => {
     dispatch(addFavouriteError(err.message));
   });
@@ -48,6 +50,7 @@ export const removeFavourite = id => dispatch => {
         listing_id: id,
       },
     },
+    { withCredentials: true },
   ).then(res => {
     if (res.status === 200) {
       dispatch(deleteFavourite(id));

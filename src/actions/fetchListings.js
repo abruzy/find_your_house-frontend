@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { getListings, fetchListingsError } from '.';
 
-const url = 'https://localhost:3001/listings';
+const url = 'http://localhost:3001/listings';
 
 export const fetchListings = () => dispatch => {
   const token = localStorage.getItem('token');
@@ -13,6 +13,7 @@ export const fetchListings = () => dispatch => {
         Authorization: `Bearer ${token}`,
       },
     },
+    { withCredentials: true },
   ).then(res => {
     dispatch(getListings(res.data));
   }).catch(err => {

@@ -12,27 +12,25 @@ function App() {
   const isAuth = useSelector(store => store.auth.isAuth);
 
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Switch>
-          {
-            isAuth ? (
-              <div>
-                <Route exact path="/" component={Dashboard} />
-                <Route exact path="/listing/:id" component={Listing} />
-                <Route exact path="/favourites" component={Favourites} />
-              </div>
-            ) : (
-              <div>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/signup" component={Signup} />
-                <Route exact path="/login" component={Login} />
-              </div>
-            )
-          }
-        </Switch>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        {
+          isAuth ? (
+            <div>
+              <Route exact path="/" component={Dashboard} />
+              <Route exact path="/listing/:id" component={Listing} />
+              <Route exact path="/favourites" component={Favourites} />
+            </div>
+          ) : (
+            <div>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/signup" component={Signup} />
+              <Route exact path="/login" component={Login} />
+            </div>
+          )
+        }
+      </Switch>
+    </BrowserRouter>
   );
 }
 
