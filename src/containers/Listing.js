@@ -130,7 +130,7 @@ const Listing = ({ listings, match }) => {
                 )
               }
               </div>
-              <p>{data.description}</p>
+              <p className="desc">{data.description}</p>
               <div className="listing-details-location">
                 <IconContext.Provider value={{ className: 'location-icon', size: '20px' }}>
                   <GoLocation />

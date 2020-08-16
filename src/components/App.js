@@ -13,23 +13,23 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Switch>
-        {
+
+      {
           isAuth ? (
-            <div>
+            <Switch>
               <Route exact path="/" component={Dashboard} />
               <Route exact path="/listing/:id" component={Listing} />
               <Route exact path="/favourites" component={Favourites} />
-            </div>
+            </Switch>
           ) : (
-            <div>
+            <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/signup" component={Signup} />
               <Route exact path="/login" component={Login} />
-            </div>
+            </Switch>
           )
         }
-      </Switch>
+
     </BrowserRouter>
   );
 }

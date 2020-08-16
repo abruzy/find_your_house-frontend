@@ -2,7 +2,6 @@ import React from 'react';
 import StarRatings from 'react-star-ratings';
 import Proptypes from 'prop-types';
 import { useHistory } from 'react-router';
-
 import '../styles/ListingItem.css';
 
 const ListingItem = ({ listing }) => {

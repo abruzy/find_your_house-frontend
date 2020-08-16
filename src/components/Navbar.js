@@ -46,7 +46,7 @@ const Navbar = () => {
           </button>
         ) : (
           <Link to="/" className="logo">
-            <h2>Find House</h2>
+            <h2>FindHouse App</h2>
           </Link>
         )
       }

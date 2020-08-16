@@ -31,7 +31,7 @@ const SideMenu = ({ sideMenuOpen, isAuth, handleLogout }) => {
 
   return (
     <div className={menuClasses}>
-      <h3>Find House</h3>
+      <h3>FindHouse App</h3>
       {
         isAuth ? (
           <div className="side-menu-auth">

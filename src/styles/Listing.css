@@ -185,6 +185,11 @@
   padding: 3px 0 0 10px;
 }
 
+.desc {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
 /* Favourite Button */
 
 .listing-details-favourite {
