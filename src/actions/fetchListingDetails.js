@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { getListing, fetchListingError } from '.';
 
-const url = id => `http://localhost:3001/listings/${id}`;
+const url = id => `https://findhouse-app-api.herokuapp.com/listings/${id}`;
 
 export const fetchListingDetails = id => dispatch => {
   const token = localStorage.getItem('token');

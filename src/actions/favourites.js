@@ -3,7 +3,7 @@ import {
   getFavourites, deleteFavourite, fetchFavouritesError, addFavouriteError, removeFavouriteError,
 } from '.';
 
-const urlFavourites = 'http://localhost:3001/favourites';
+const urlFavourites = 'https://findhouse-app-api.herokuapp.com/favourites';
 const token = localStorage.getItem('token');
 
 export const fetchFavourites = () => dispatch => {

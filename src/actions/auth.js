@@ -1,8 +1,8 @@
 import axios from 'axios';
 import { addSignupError, addLoginError } from '.';
 
-const urlSignup = 'http://localhost:3001/signup';
-const urlLogin = 'http://localhost:3001/auth/login';
+const urlSignup = 'https://findhouse-app-api.herokuapp.com/signup';
+const urlLogin = 'https://findhouse-app-api.herokuapp.com/auth/login';
 
 export const signupUser = (user, history) => dispatch => {
   axios.post(
