@@ -116,3 +116,36 @@ footer {
 .footer-link:hover {
   color: rgb(148, 148, 148);
 }
+
+@media screen and (max-width: 480px) {
+  .home-main-section h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .home-main-section-colored {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-bottom: 10rem;
+  }
+
+  /* .stats {
+    text-align: justify;
+  }
+
+  .home-main-section-colored p {
+    width: 100%;
+  } */
+
+  .img-brand {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .everywhere {
+    height: 10rem;
+    margin-top: 18rem;
+  }
+}

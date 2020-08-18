@@ -21,16 +21,16 @@ export default function Home() {
         <h2>Comfortable home from reliable people</h2>
         <div className="home-main-section-colored">
           <div className="left-content">
-            <h2>
+            <h2 className="stats">
               All stats at your fingertips
               <br />
               {' '}
               at any time
             </h2>
-            <p>You will have the best tools to manage and collect information about the houses. Full controll will save you from any unforseen situations and save you money and customer relationships.</p>
+            <p className="info">You will have the best tools to manage and collect information about the houses. Full controll will save you from any unforseen situations and save you money and customer relationships.</p>
             <Link to="/signup" className="start-free">Start free</Link>
           </div>
-          <img src="/bookstore-app.png" alt="..." />
+          <img src="/bookstore-app.png" alt="..." className="img-brand" />
         </div>
       </div>
       <div className="everywhere">
